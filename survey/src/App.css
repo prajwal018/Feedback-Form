@@ -1,0 +1,124 @@
+/* Style for the entire form container */
+div.title {
+	text-align: center;
+	font-size: x-large;
+	background-color: #f0f0f1;
+	border-radius: 10px;
+	width: 60%;
+	margin: auto;
+}
+.form-container {
+	width: 60%;
+	margin: 10px auto;
+	padding: 20px;
+	background-color: #f0f0f0;
+	border-radius: 10px;
+}
+div {
+	text-align: center;
+}
+div.start {
+	display: flex;
+	justify-content: center;
+}
+
+/* Style for the welcome message */
+.form-container p {
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+}
+
+/* Style for the question number */
+.form-container p.question-number {
+	font-size: 1rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+/* Style for the question */
+.form-container p.question {
+	font-size: 1.2rem;
+	margin: 20px;
+	text-align: center;
+}
+.form-container textarea {
+	width: 80%;
+	border-radius: 10px;
+	height: 5rem;
+	resize: none;
+	font-size: large;
+}
+.rating {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.rating label {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+div.rating button {
+	background-color: #f0f0f0;
+	color: #000;
+	border: 1.5px solid seagreen;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.rating button.selected {
+	background-color: #3e8e41;
+	color: #fff;
+}
+.rating button:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+/* Style for the answer options */
+.form-container label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.form-container input[type='radio'] {
+	margin-right: 10px;
+}
+
+/* Style for the previous and next buttons */
+.form-container div.nav {
+	display: flex;
+	justify-content: space-between;
+}
+.form-container button {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 5px;
+}
+
+.form-container button:hover {
+	background-color: #3e8e41;
+}
+
+/* Style for the submit button */
+.form-container button[type='submit'] {
+	background-color: #008cba;
+}
+
+.form-container button[type='submit']:hover {
+	background-color: #007a9b;
+}
+
+/* Style for the disabled previous button */
+.form-container button[disabled='true'] {
+	background-color: #cccccc;
+	cursor: not-allowed;
+}
